@@ -1,0 +1,73 @@
+#canvas{
+    /* border: 3px solid black; */
+
+    /* border-left: 10px solid yellow; */
+    /* border-right: 10px solid yellow; */
+
+    /* overflow-inline: ; */
+
+    z-index: 10;
+    position: relative;
+
+}
+
+.gameScene{
+    background-color: rgba(35, 35, 35, 1);    
+    width: 45vw;
+    height: 100vh;
+    z-index: -6;
+
+    /* border: 2px dashed red; */
+
+    overflow: hidden;
+
+}
+
+#lanesLeft{
+    border: 15px dashed whitesmoke;
+    border-left: 15px solid yellow;
+    border-top: none;
+    border-bottom: none;
+    height: 200vh;
+     width: 25vw; 
+    /* color: yellow; */
+    position: fixed;
+     margin-left: 2%;
+    margin-top: -10;
+
+    background-repeat: repeat-y;
+
+    /* animation: scrollRoad 2s infinite reverse; */
+    z-index: 5;
+
+    animation: scrollRoad 1.5s linear reverse infinite;
+
+    overflow: hidden;
+}
+
+#lanesRight{
+    border: 15px dashed whitesmoke;
+    border-right: 15px solid yellow;
+    border-top: none;
+    border-bottom: none;
+    height: 200vh;
+     width: 25vw; 
+    /* color: yellow; */
+    position: fixed;
+     margin-left: 16%;
+    margin-top: -10;
+
+    background-repeat: repeat-y;
+
+    /* animation: scrollRoad 2s infinite reverse; */
+    z-index: 5;
+
+    animation: scrollRoad 1.5s linear reverse infinite;
+
+    overflow: hidden;
+}
+
+/* roadScroll */
+@keyframes scrollRoad{
+    100%{transform: translateY(-225px)};
+}
